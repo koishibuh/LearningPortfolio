@@ -1,0 +1,40 @@
+html {
+	font-family: sans-serif;
+}
+
+
+body {
+	width: 50%;
+	max-width: 800px;
+	min-width: 480px;
+	margin: 0 auto;
+	background: rgb(109, 109, 109);
+}
+
+.box {
+	display: block;
+	padding: 10px;
+	margin-top: 10%;
+}
+
+.flexRow {
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+}
+
+.border {
+	border: 1px solid black;
+	border-radius: 10px;
+	background: white;
+}
+
+header {
+	text-align: center;
+	font-size: large;
+	text-decoration: underline;
+}
+
+.center-text {
+	text-align: center;
+}
