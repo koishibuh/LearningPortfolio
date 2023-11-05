@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Number Guessing Game</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js" defer></script>
+  </head>
+	<body>
+    <h1>Number Guessing Game</h1>
+
+		<p class="box">A number has been randomly selected between 1 and 100.<br>
+			Can you guess what the number is in <span class="roundCountText">10</span> turns or fewer?
+		</p>
+		
+    <div class="flexBoxCol guessForm">
+			<label for="guessField">Enter Your Guess (<span class="remainingGuessCount"></span>)</label>
+			<input type="number" min="1" max="100" required id="guessField" class="guessField" required />
+			<input type="submit" value="Submit Guess" class="submitGuessButton">
+    </div>
+		
+    <div class="flexBoxCol resultBox">
+      <p class="guessResult">-</p>
+      <p class="guessHistory">-</p>
+			<p class="gameDone">-</p>
+    </div>
+		
+		<div class="flexBoxCol border">
+			<h2 class="header">Options</h2>
+
+			<label>New Game</label>
+			<input type="submit" value="New Game" class="newGameButton">
+
+			<label>Set Number of Guesses</label>
+			<p class="box">Change the number of guesses you can make.<br>
+				This can only be changed at the start of a game.</p>
+			<input type="number" required id="guessCountField" class="guessCountField" value="10" min="1">
+			<input type="submit" value="Set" class="setGuessCountButton">
+		</div>
+
+		<div>
+			<h2 class="header">TODO</h2>
+			<ul>
+				<li>Make page pretty 🌸</li>
+				<li>Display error if guess field is empty</li>
+				<li>Do not accept guesses manually entered below 1 or over 100</li>
+				<li>Save last set number guess to local storage?</li>
+				<li>Clean up javascript file?</li>
+			</ul>
+		</div>
+
+		<div>
+			<h2 class="header">Modifications</h2>
+			<p>Original Tutorial From <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash" target="_blank">MDN Webdocs</a> with lots of changes because I can't follow tutorials 😅</p>
+			<ul>
+				<li>On game over, displays what the answer was instead of letting player suffer</li>
+				<li>Display high / low on Result History</li>
+				<li>Display remaining guess count</li>
+				<li>Ability to change the number of guesses</li>
+				<li>Ability to restart game any time</li>
+				<li>Renamed ALL THE VARIABLES</li>
+				<li>Reworked logic to check if guess count limit was reached at the end</li>
+			</ul>
+		</div>
+
+  </body>
+</html>

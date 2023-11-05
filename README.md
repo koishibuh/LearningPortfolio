@@ -1,2 +1,2 @@
-# LearningPortfolio
-Various tutorials &amp; coding excersies I've done while learning code things!
+# LearningProjects
+Little exercises and tutorials I've completed while on my journey of learning Javascript, HTML, CSS! 🥳 
